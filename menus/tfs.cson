@@ -1,0 +1,66 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label' : 'TFS'
+      'submenu' : [
+        {
+          'label': 'Checkout'
+          'command': 'tfs:checkout'
+        },
+        {
+          'label': 'Undo'
+          'command': 'tfs:undo'
+        }
+      ]
+    }
+  ]
+'menu': [
+  {
+    'label': 'Tfs'
+    'submenu': [
+      {
+        'label' : 'bit32'
+        'submenu': [
+            {
+              'label': 'vs2008'
+              'command': 'tfs:source:bit32:vs2008'
+            },
+            {
+              'label': 'vs2010'
+              'command': 'tfs:source:bit32:vs2010'
+            },
+            {
+              'label': 'vs2013'
+              'command': 'tfs:source:bit32:vs2013',
+            },
+            {
+              'label': 'vs2015'
+              'command': 'tfs:source:bit32:vs2015'
+            }
+        ]
+      },
+      {
+        'label' : 'bit64'
+        'submenu': [
+            {
+              'label': 'vs2008'
+              'command': 'tfs:source:bit64:vs2008'
+            },
+            {
+              'label': 'vs2010'
+              'command': 'tfs:source:bit64:vs2010'
+            },
+            {
+              'label': 'vs2013'
+              'command': 'tfs:source:bit64:vs2013',
+            },
+            {
+              'label': 'vs2015'
+              'command': 'tfs:source:bit64:vs2015'
+            }
+        ]
+      }
+    ]
+  }
+]
