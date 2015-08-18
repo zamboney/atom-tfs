@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-text-editor": ["tfs:checkout","tfs:undo"]
   },
-  "repository": "https://github.com/zamboney/atom-tfs",
+  "repository": "https://github.com/zamboney/atom-tfs.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
